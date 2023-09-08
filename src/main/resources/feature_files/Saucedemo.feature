@@ -15,7 +15,7 @@ Feature: Testing Saucedemo functionality
 
   Scenario: Login to saucedemo with locked_out_user
     When I login with the following details
-      | username      | password     |
+      | username        | password     |
       | locked_out_user | secret_sauce |
     And I click on the login button
     Then "Sorry, this user has been locked out" error message is displayed
